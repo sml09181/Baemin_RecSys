@@ -1,0 +1,81 @@
+[Gaussian Mu Value]
+final_score = (
+            0.7 * raw_score +
+            0.15 * time_w +
+            0.15 * weather_w
+        ) * popularity_penalty
+
+1. Q3
+- Item Coverage: 20.70%
+- # Recommend Unique Items: 65
+- Entropy: 4.2484
+- Normalized Entropy (0~1): 0.7054
+
+2. median
+- Item Coverage: 41.72%
+- # Recommend Unique Items: 131
+- Entropy: 5.2610
+- Normalized Entropy (0~1): 0.7480
+
+3. mean
+- Item Coverage: 24.20%
+- # Recommend Unique Items: 76
+- Entropy: 4.5156
+- Normalized Entropy (0~1): 0.7227
+
+-----------------------------------------------
+
+[Control]
+final_score = (
+            0.7 * raw_score +
+            0.15 * time_w +
+            0.15 * weather_w) 
+
+- Item Coverage: 48.41%
+- # Recommend Unique Items: 152
+- Entropy: 4.9662
+- Normalized Entropy (0~1): 0.6852
+
+-----------------------------------------------
+
+[Adar Only - 20%]
+adar_bias = adar_bias_dict.get(rid, 1.0)
+bias_adj = 0.2 * adar_bias + 0.8
+final_score = (
+            0.7 * raw_score +
+            0.15 * time_w +
+            0.15 * weather_w
+        ) * bias_adj
+
+- Item Coverage: 28.03%
+- # Recommend Unique Items: 88
+- Entropy: 4.6575
+- Normalized Entropy (0~1): 0.7210
+
+[Adar Only - 100%]
+adar_bias = adar_bias_dict.get(rid, 1.0)
+final_score = (
+            0.7 * raw_score +
+            0.15 * time_w +
+            0.15 * weather_w
+        ) * adar_bias
+
+- Item Coverage: 5.10%
+- # Recommend Unique Items: 16
+- Entropy: 3.9210
+- Normalized Entropy (0~1): 0.9802
+
+----------------------------------------------
+
+[Experimental = Adar + median]
+bias_adj = 0.2 * adar_bias + 0.8
+final_score = (
+            0.7 * raw_score +
+            0.15 * time_w +
+            0.15 * weather_w
+        ) * bias_adj * popularity_penalty
+
+- Item Coverage: 45.86%
+- # Recommend Unique Items: 144
+- Entropy: 5.5541
+- Normalized Entropy (0~1): 0.7746
