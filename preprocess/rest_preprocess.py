@@ -12,6 +12,7 @@ def remove_provided_text(desc):
         return ''
     return re.sub(r'.*제공\n?', '', desc).strip()
 
+# Preprocessing business hours
 def get_last_order_time(time_info):
     if '라스트오더' in time_info:
         match = re.search(r'\n(\d{2}:\d{2}) 라스트오더', time_info)
@@ -39,7 +40,7 @@ with open('/proj-rs/data/restaurant_info.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 review_df = pd.read_excel('/proj-rs/data/02_restaurants/user_review_excel/05_3_reviews_combine_restaurant_id_nan_X.xlsx')
-valid_ids = set(review_df['restaurant_id'].dropna().astype(int).tolist())
+valid_ids = set(review_df['restaurant_id'].dropna().astype(int).tolist()) # Filter based on restaurant_id
 
 data = [res for res in data if res.get('restaurant_id') in valid_ids]
 processed_data = copy.deepcopy(data)

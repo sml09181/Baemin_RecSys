@@ -9,7 +9,7 @@ def clean_price(price_str):
         return None
     if price_str == '무료':
         return 0
-    # 범위 형식 -> 평균값
+    # For ranges like '12000~18000', calculate the average value
     if '~' in price_str:
         price_range = price_str.replace('원', '').replace(',', '').split('~')
         low_price = int(price_range[0].strip())
@@ -17,9 +17,10 @@ def clean_price(price_str):
         return (low_price + high_price) // 2 
     return int(price_str.replace('원', '').replace(',', '').strip())
 
+# Remove brackets like [[ ]], []
 def clean_menu_name(menu_name):
-    menu_name = re.sub(r'\[\[.*?\]\]', '', menu_name)  # [[ ]] 안의 내용 제거
-    menu_name = re.sub(r'\[.*?\]', '', menu_name)      # [ ] 안의 내용 제거
+    menu_name = re.sub(r'\[\[.*?\]\]', '', menu_name) 
+    menu_name = re.sub(r'\[.*?\]', '', menu_name) 
     return menu_name.strip()
 
 def clean_menu_description(description):

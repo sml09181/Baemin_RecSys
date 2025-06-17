@@ -86,7 +86,6 @@ def menu_sim(menu_choice):
         rest = res_info.get(rest_id, '')
         img_path = info.get('menu_img_path', '')
         img_src = get_image_base64(img_path)
-        print(rest, rest_id)
         html = f"""
         <div style="display: inline-block; width: 180px; margin: 5px; text-align: center;">
             <img src="{img_src}" alt="{name}" style="width: 100%; border-radius: 10px;">
