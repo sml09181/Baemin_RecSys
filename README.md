@@ -17,7 +17,7 @@ This project involves real user review data collection, preprocessing, analysis,
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Data Collection & Preprocessing](#data-collection--preprocessing)
-3. [Model Architecture](#model-architecture)
+3. [Pipeline Architecture](#pipeline-architecture)
 4. [Demo](#demo)
 6. [How To Run](#how-to-run)
 7. [Project Structure](#project-structure)
@@ -33,7 +33,7 @@ This project involves real user review data collection, preprocessing, analysis,
   - Reviews: 12,405
 
 
-## Model Architecture
+## Pipeline Architecture
 
 ### Step 1. Restaurant Recommendation (Collaborative Filtering)
 - `SVD`-based utility matrix
