@@ -23,6 +23,8 @@ This project involves real user review data collection, preprocessing, analysis,
 7. [Project Structure](#project-structure)
 
 
+
+
 ## Data Collection & Preprocessing
 - **Data Source:** Naver Place User Reviews
 - **Target Locations:** Daehyeon-dong, Yeonhui-dong, Changcheon-dong, Hongje-dong
