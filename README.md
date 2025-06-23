@@ -28,11 +28,6 @@ This project involves real user review data collection, preprocessing, analysis,
 ## Data Collection & Preprocessing
 - **Data Source:** Naver Place User Reviews
 - **Target Locations:** Daehyeon-dong, Yeonhui-dong, Changcheon-dong, Hongje-dong
-- **Key Preprocessing Steps:**
-  - Merging parallel crawled datasets
-  - Filtering by specified locations and restaurant IDs
-  - Reindexing user IDs and removing duplicate reviews
-  - Addressing insufficient data by crawling additional restaurants and adjusting review thresholds
 - **Final Dataset:**
   - Users: 1,703
   - Restaurants: 327 
