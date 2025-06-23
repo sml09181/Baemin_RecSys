@@ -1,4 +1,6 @@
-# BaRaemo: Baemin Recommender System - What Should I Eat Today?
+# BaRaemo: Baemin Recommender System
+
+*What Should I Eat Today?🍽️*
 
 ## Project Overview
 **BaRaemo** is a menu recommendation system designed to help Baemin (배달의 민족) app users easily choose what to eat.  
@@ -7,7 +9,7 @@ Our system addresses this gap by providing **personalized restaurant recommendat
 
 This project involves real user review data collection, preprocessing, analysis, and building a recommendation system that tackles practical problems like popularity bias and item coverage.
 
-![Image](https://github.com/user-attachments/assets/9655dbb7-bd89-4386-9ec8-f353ee249586)
+<img src="https://github.com/user-attachments/assets/9655dbb7-bd89-4386-9ec8-f353ee249586" width="400"/>
 
 
 
@@ -54,7 +56,7 @@ This project involves real user review data collection, preprocessing, analysis,
 
 ## Demo
 
-![BaRaemo Demo](demo/demo.gif)
+![BaRaemo Demo](demo.gif)
 
 The demo shows the full user flow:  
 1️⃣ **Restaurant recommendations**  
@@ -63,11 +65,13 @@ The demo shows the full user flow:
 4️⃣ **Recommend the Top 3 menus similar to the selected menu**
 
 A random user is selected in each session, and their previously visited restaurants are displayed.
+
+
 ---
 
 ## How To Run
 
-1. Data Preprocessing
+### 1. Data Preprocessing
 To preprocess the raw crawled data:
 
 ```bash
@@ -81,7 +85,7 @@ To build weather and visit time weight matrix for SVD:
 python weight_matrix.py
 ```
 
-2. Training & Inference
+### 2. Training & Inference
 To run the step 1 - Get TOP5 restaurants and recommend their best menus:
 ```bash
 python svd.py
@@ -92,14 +96,14 @@ To run Step 2 - Recommend Top 3 menus similar to the user's selected menu:
 python menu_sim.py
 ```
 
-3. Run Demo
+### 3. Run Demo
 To execute the `Gradio` demo with a user interface:
 
 ```bash
 python demo.py
 ```
 
-### Project Structure
+## Project Structure
 
 ```
 ResSys/
