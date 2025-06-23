@@ -18,11 +18,9 @@ This project involves real user review data collection, preprocessing, analysis,
 1. [Project Overview](#project-overview)
 2. [Data Collection & Preprocessing](#data-collection--preprocessing)
 3. [Model Architecture](#model-architecture)
-4. [Problems & Solutions](#problems--solutions)
-5. [Demo](#demo)
-6. [Usage](#usage)
+4. [Demo](#demo)
+6. [How To Run](#how-to-run)
 7. [Project Structure](#project-structure)
-8. [Tech Stack](#tech-stack)
 
 
 ## Data Collection & Preprocessing
