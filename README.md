@@ -10,10 +10,8 @@ Our system addresses this gap by providing **personalized restaurant recommendat
 This project involves real user review data collection, preprocessing, analysis, and building a recommendation system that tackles practical problems like popularity bias and item coverage.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9655dbb7-bd89-4386-9ec8-f353ee249586" width="700" />
+  <img src="https://github.com/user-attachments/assets/0856620a-e9ec-478e-b653-c0570e20e5e3" width="600" />
 </p>
-
-
 
 
 ## Table of Contents
@@ -26,7 +24,7 @@ This project involves real user review data collection, preprocessing, analysis,
 7. [Project Structure](#project-structure)
 8. [Tech Stack](#tech-stack)
 
----
+
 ## Data Collection & Preprocessing
 - **Data Source:** Naver Place User Reviews
 - **Target Locations:** Daehyeon-dong, Yeonhui-dong, Changcheon-dong, Hongje-dong
@@ -40,7 +38,7 @@ This project involves real user review data collection, preprocessing, analysis,
   - Restaurants: 327 
   - Menus w/ image: 2,422
   - Reviews: 12,405
----
+
 
 ## Model Architecture
 
@@ -54,7 +52,7 @@ This project involves real user review data collection, preprocessing, analysis,
 - Cosine similarity for similarity computation
 - `CLIP` and `ko-sroberta-multitask`-based embeddings
 - Duplicate image filtering and weight tuning
----
+
 
 
 ## Demo
@@ -73,7 +71,7 @@ The demo shows the full user flow:
 A random user is selected in each session, and their previously visited restaurants are displayed.
 
 
----
+
 
 ## How To Run
 
