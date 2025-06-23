@@ -43,7 +43,7 @@ This project involves real user review data collection, preprocessing, analysis,
 ## Model Architecture
 
 ### Step 1. Restaurant Recommendation (Collaborative Filtering)
-- SVD-based utility matrix
+- `SVD`-based utility matrix
 - Time and weather weight integration
 - Bias adjustments for popularity and obscurity
 
