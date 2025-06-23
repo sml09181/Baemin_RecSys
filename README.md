@@ -105,7 +105,7 @@ python demo.py
 ## Project Structure
 
 ```
-ResSys/
+Baemin_RecSys/
 │
 ├── crawl/                
 ├── data/                
