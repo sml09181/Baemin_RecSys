@@ -9,7 +9,10 @@ Our system addresses this gap by providing **personalized restaurant recommendat
 
 This project involves real user review data collection, preprocessing, analysis, and building a recommendation system that tackles practical problems like popularity bias and item coverage.
 
-<img src="https://github.com/user-attachments/assets/9655dbb7-bd89-4386-9ec8-f353ee249586" width="400"/>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9655dbb7-bd89-4386-9ec8-f353ee249586" width="700" />
+</p>
+
 
 
 
@@ -56,7 +59,10 @@ This project involves real user review data collection, preprocessing, analysis,
 
 ## Demo
 
-![BaRaemo Demo](demo.gif)
+<p align="center">
+  <img src="demo.gif" width="1000" />
+</p>
+
 
 The demo shows the full user flow:  
 1️⃣ **Restaurant recommendations**  
